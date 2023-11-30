@@ -1,6 +1,6 @@
 name: Release Web Clipper
 
-on:workflow_dispatch
+on:
   push:
     tags-ignore:
       - '**-beta*'

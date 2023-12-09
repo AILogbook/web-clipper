@@ -39,6 +39,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+          allowUpdates: true
       - name: Upload Firefox Release Asset
         id: upload-firefox-asset
         uses: actions/upload-release-asset@v1

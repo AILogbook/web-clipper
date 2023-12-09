@@ -138,7 +138,7 @@
       }
     },
     "background": {
-      "scripts": [
+      "service_worker": [
         "background.js"
       ]
     },

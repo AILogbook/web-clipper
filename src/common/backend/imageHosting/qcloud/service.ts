@@ -71,8 +71,8 @@ export default class QcloudCosImageHostingService implements ImageHostingService
         Bucket: this.config.bucket,
         Region: this.config.region,
         Key: `${this.config.folder}${folderName}/${fileName}`,
-        Sign: this.config.privateRead,
-        Expires: this.config.expires,
+        Sign: false,
+        //Expires: this.config.expires,
       },
       (err, data) => {
         if (err) throw err;
